@@ -1,0 +1,48 @@
+% Joe Nyhan, template modified: 18 April 2022
+% Header file for physics homework assignments.
+%   - use this file along with the provided body.tex and .gitignore
+%   - provide global variables in ../global.tex
+
+% TEST
+\documentclass[12pt, twoside, reqno]{article}
+
+% PAGE SPECIFICATIONS
+\usepackage[centering, margin=.75in]{geometry}
+
+% GENERAL DOCUMENT 
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption} % specification of caption for figure and table
+    % \captionsetup[figure]{labelfont={bf}, name={Figure}, labelsep=period, width = .8\textwidth}
+    % \captionsetup[table]{labelfont={bf}, name={Table}, labelsep=period, width = .8\textwidth}
+\usepackage{enumitem}
+    \setlist{noitemsep,leftmargin=*, font=\bfseries}
+\usepackage{xparse} % for creating new commands
+
+% MATHEMATICS AND PHYSICS
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage[italicdiff]{physics}
+\usepackage{tensor}
+\usepackage{siunitx}
+\usepackage[makeroom]{cancel} %% \cancelto{value}{expression}
+
+% MISC MACROS
+\usepackage{dutchcal} % changes \mathcal, etc.
+\newcommand{\Lag}{\mathcal{L}}
+\newcommand{\Sl}{\ell} % Lowercase script l 
+\newcommand{\Def}{\equiv} % triple equals, for definitions
+\newcommand{\goesto}{\quad\Rightarrow\quad}
+\newcommand{\prop}{\propto}
+\newcommand{\p}{\partial}
+
+% GLOBAL PARAMETERS
+\input{../../globals.tex}
+
+\begin{document}
+
+    \input{body.tex}
+
+\end{document}

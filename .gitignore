@@ -1,0 +1,13 @@
+# Joe Nyhan, 24 January 2022
+# gitignore for latex repos using Latex workshop vscode extension (lots of aux files)
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
