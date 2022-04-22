@@ -13,7 +13,9 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{setspace} % \singlespacing, \doublespacing
 \usepackage{caption} % specification of caption for figure and table
+\usepackage{subcaption} % \begin{subfigure}{width}
     % \captionsetup[figure]{labelfont={bf}, name={Figure}, labelsep=period, width = .8\textwidth}
     % \captionsetup[table]{labelfont={bf}, name={Table}, labelsep=period, width = .8\textwidth}
 \usepackage{enumitem}
@@ -27,6 +29,14 @@
 \usepackage{tensor}
 \usepackage{siunitx}
 \usepackage[makeroom]{cancel} %% \cancelto{value}{expression}
+
+% PHYSICS MACROS
+\newcommand{\V}[1]{\vb{#1}}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\vunit}[1]{\vu{#1}}
+
+\newcommand{\up}{\uparrow} % up spin ket
+\newcommand{\down}{\downarrow} % down spin ket
 
 % MISC MACROS
 \usepackage{dutchcal} % changes \mathcal, etc.
