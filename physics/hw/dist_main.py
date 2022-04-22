@@ -13,6 +13,5 @@ def main():
         sh(f'cp ./template/main.tex ./{dir}/')
     
     
-
 if __name__ == '__main__':
     main()
