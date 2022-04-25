@@ -22,8 +22,12 @@
     \setlist{noitemsep,leftmargin=*, font=\bfseries}
 \usepackage{xparse} % for creating new commands
 
+\usepackage{titlesec}
+    \titleformat*{\section}{\large\bfseries}
+
 % MATHEMATICS AND PHYSICS
 \usepackage[fleqn]{amsmath}
+    \numberwithin{equation}{section}
 \usepackage{amssymb}
 \usepackage[italicdiff]{physics}
 \usepackage{tensor}
