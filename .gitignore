@@ -15,3 +15,8 @@
 *.out
 *.run.xml
 *.synctex.gz
+
+# latex beamer aux files
+*.nav
+*.snm
+*.toc
