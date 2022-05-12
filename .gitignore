@@ -20,3 +20,10 @@
 *.nav
 *.snm
 *.toc
+
+# latex md aux files
+*.md.tex
+*.verbatim
+*.markdown.in
+*.markdown.out
+*.markdown.lua
